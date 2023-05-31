@@ -1,0 +1,338 @@
+package vendasProdutos;
+
+package vendasProdutos;
+
+public class categoria {
+private String nome;
+
+public String getNome() {
+	return nome;
+}
+
+public void setNome(String nome) {
+	this.nome = nome;
+}
+}
+
+
+public class cliente {
+ private String nome;
+ private int cpf;
+ public String getNome() {
+	return nome;
+}
+public void setNome(String nome) {
+	this.nome = nome;
+}
+public int getCpf() {
+	return cpf;
+}
+public void setCpf(int cpf) {
+	this.cpf = cpf;
+}
+
+}
+
+
+public class fornecedor {
+private int cnpj;
+private String nome;
+
+public int getCnpj() {
+	return cnpj;
+}
+public void setCnpj(int cnpj) {
+	this.cnpj = cnpj;
+}
+public String getNome() {
+	return nome;
+}
+public void setNome(String nome) {
+	this.nome = nome;
+}
+
+}
+
+
+public class pagamento {
+ private double dinheiro;
+ private double cartao;
+ 
+ public double getDinheiro() {
+	return dinheiro;
+}
+public void setDinheiro(double dinheiro) {
+	this.dinheiro = dinheiro;
+}
+public double getCartao() {
+	return cartao;
+}
+public void setCartao(double cartao) {
+	this.cartao = cartao;
+}
+
+}
+
+
+public class produto {
+
+ private String	nome;
+
+ private String DataDeValidade; 
+ 
+public String getDataDeValidade() {
+	return DataDeValidade;
+}
+
+public void setDataDeValidade(String dataDeValidade) {
+	DataDeValidade = dataDeValidade;
+}
+
+public String getNome() {
+	return nome;
+}
+
+public void setNome(String nome) {
+	this.nome = nome;
+}
+}
+
+
+public class VendaProduto {
+private double id_venda;
+private double id_produto;
+
+public double getId_venda() {
+	return id_venda;
+}
+public void setId_venda(double id_venda) {
+	this.id_venda = id_venda;
+}
+public double getId_produto() {
+	return id_produto;
+}
+public void setId_produto(double id_produto) {
+	this.id_produto = id_produto;
+}
+
+}
+
+
+public class vendas {
+
+private	double valor;
+private String data;
+
+public String getData() {
+	return data;
+}
+public void setData(String data) {
+	this.data = data;
+}
+public double getValor() {
+	return valor;
+}
+public void setValor(double valor) {
+	this.valor = valor;
+}
+	
+}
+
+
+public class vendedor {
+private String nome;
+
+public String getNome() {
+	return nome;
+}
+
+public void setNome(String nome) {
+	this.nome = nome;
+}
+}
+-----------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 1</title>
+</head>
+<body>
+  <h2>categoria</h2>
+  <form action="#" method="POST">
+    
+    <label for="categoria">nome:</label>
+    <input type="text" id="categoria" name="int" required><br><br>
+        
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+
+--------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 2</title>
+</head>
+<body>
+  <h2>cliente</h2>
+  <form action="#" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+    
+    <label for="cpf">cpf:</label>
+    <input type="int" id="cpf" name="int" required><br><br>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+	
+
+------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 3</title>
+</head>
+<body>
+  <h2>fornecedor</h2>
+  <form action="#" method="POST">
+     
+    
+     <label for="nome">nome:</label>
+    <input type="text" id="nome" name="int" required><br><br>
+    
+    
+     <label for="cnpj">cnpj:</label>
+    <input type="number" id="number" name="int" required><br><br>
+    
+    
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+---------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos</title>
+</head>
+<body>
+  <h2>forma de pagamento 4</h2>
+  <form action="#" method="POST">
+    
+    <label for="dinheiro">dinheiro:</label>
+    <input type="text" id="dinheiro" name="int" required><br><br>
+    
+    
+     <label for="cartao">cartao:</label>
+    <input type="text" id="cartao" name="int" required><br><br>
+    
+    
+    
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 5</title>
+</head>
+<body>
+  <h2>produto</h2>
+  <form action="#" method="POST">
+     
+    
+     <label for="nome">nome:</label>
+    <input type="text" id="nome" name="int" required><br><br>
+    
+    
+     <label for="data">data de validade:</label>
+    <input type="date" id="date" name="int" required><br><br>
+    
+    
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 6</title>
+</head>
+<body>
+  <h2>venda produto</h2>
+  <form action="#" method="POST">
+    
+    <label for="id_venda">id_venda:</label>
+    <input type="text" id="id_venda" name="int" required><br><br>
+        
+        
+     <label for="id_produto">id_produto:</label>
+    <input type="text" id="id_produto" name="int" required><br><br>   
+        
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 7</title>
+</head>
+<body>
+  <h2>vendas</h2>
+  <form action="#" method="POST">
+    
+    <label for="venda">valor da venda:</label>
+    <input type="text" id="venda" name="int" required><br><br>
+        
+        
+     <label for="id_produto">data da venda:</label>
+    <input type="date" id="venda" name="int" required><br><br>   
+        
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vendas de produtos 8</title>
+</head>
+<body>
+  <h2>vendedor</h2>
+  <form action="#" method="POST">
+    
+    <label for="venda">nome:</label>
+    <input type="text" id="nome" name="int" required><br><br>
+           
+           
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+
+
+
+
+
+
